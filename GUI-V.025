@@ -1,0 +1,1875 @@
+-- KRYZ-GUI
+-- V.00.01
+
+-- INSTRUCTIONS !!!
+
+-- Press F to Fly
+-- Click TP Hotkey : CTRL
+-- Press R to uninfinite jump
+
+-- prints
+
+print("Thank you for using KRYZ-GUI")
+
+-- Notification - Loaded |
+
+sendNotice=game.ReplicatedStorage.Notices.SendUserNotice;sendNotice:Fire("This GUI was made by KRYZ / DikerR25!")
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "KRYZ-GUI";
+	Text = "Made by KRYZ/DikerR25";
+})
+
+
+
+-- Instances:
+
+
+local Workspace = game:GetService("Workspace")
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+
+local ScreenGui = Instance.new("ScreenGui")
+local framegui = Instance.new("Frame")
+local scrollmenu = Instance.new("ScrollingFrame")
+local buttonguiinfo = Instance.new("TextButton")
+local misccharacter = Instance.new("TextButton")
+local miscland = Instance.new("TextButton")
+local miscwaypoint = Instance.new("TextButton")
+local frameinfo = Instance.new("Frame")
+local textguiinfo = Instance.new("TextLabel")
+local bgguiinfo = Instance.new("Frame")
+local Frameguiby = Instance.new("Frame")
+local guiby = Instance.new("TextLabel")
+local Frameui = Instance.new("Frame")
+local uiby = Instance.new("TextLabel")
+local Frametest = Instance.new("Frame")
+local test = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local scrollchar = Instance.new("ScrollingFrame")
+local Framechar = Instance.new("Frame")
+local Framews = Instance.new("Frame")
+local walkspeedtext = Instance.new("TextLabel")
+local walkspeed = Instance.new("TextButton")
+local wsframe = Instance.new("Frame")
+local wsinput = Instance.new("TextBox")
+local setws = Instance.new("TextButton")
+local rews = Instance.new("TextButton")
+local wsclose = Instance.new("TextButton")
+local Framejp = Instance.new("Frame")
+local jumppowertext = Instance.new("TextLabel")
+local jumppower = Instance.new("TextButton")
+local jpframe = Instance.new("Frame")
+local jpinput = Instance.new("TextBox")
+local setjp = Instance.new("TextButton")
+local rejp = Instance.new("TextButton")
+local jpclose = Instance.new("TextButton")
+local Framefly = Instance.new("Frame")
+local flytext = Instance.new("TextLabel")
+local fly = Instance.new("TextButton")
+local Framenoclip = Instance.new("Frame")
+local nocliptext = Instance.new("TextLabel")
+local noclip = Instance.new("TextButton")
+local Status = Instance.new("TextLabel")
+local StatusPF = Instance.new("TextLabel")
+local Frameinfjump = Instance.new("Frame")
+local infinitejumptext = Instance.new("TextLabel")
+local infinitejump = Instance.new("TextButton")
+local Frameclicktp = Instance.new("Frame")
+local clicktptext = Instance.new("TextLabel")
+local clicktp = Instance.new("TextButton")
+local Frameantiblacklist = Instance.new("Frame")
+local antiblacklisttext = Instance.new("TextLabel")
+local antiblacklist = Instance.new("TextButton")
+local Framefreezewater = Instance.new("Frame")
+local freezewatertext = Instance.new("TextLabel")
+local freezewater = Instance.new("TextButton")
+local Frameantiafk = Instance.new("Frame")
+local antiafktext = Instance.new("TextLabel")
+local antiafk = Instance.new("TextButton")
+local help = Instance.new("TextButton")
+local textchar = Instance.new("TextLabel")
+local frameland = Instance.new("Frame")
+local textland = Instance.new("TextLabel")
+local bgland = Instance.new("Frame")
+local Frameland = Instance.new("Frame")
+local freeland = Instance.new("TextButton")
+local maxland = Instance.new("TextButton")
+local framedupebase = Instance.new("Frame")
+local donatebasetext = Instance.new("TextLabel")
+local openguidonatebase = Instance.new("TextButton")
+local framefakeload = Instance.new("Frame")
+local loadbase = Instance.new("TextButton")
+local load = Instance.new("TextButton")
+local framedupemoney = Instance.new("Frame")
+local slot = Instance.new("TextButton")
+local dupem = Instance.new("TextButton")
+local framedonateslot = Instance.new("ScrollingFrame")
+local Frame_2 = Instance.new("Frame")
+local slot5 = Instance.new("TextButton")
+local slot6 = Instance.new("TextButton")
+local slot4 = Instance.new("TextButton")
+local slot1 = Instance.new("TextButton")
+local slot3 = Instance.new("TextButton")
+local slot2 = Instance.new("TextButton")
+local closedonateslot = Instance.new("TextButton")
+local frameway = Instance.new("Frame")
+local waypoint = Instance.new("TextLabel")
+local bgguiinfo_2 = Instance.new("Frame")
+local frameplayertp = Instance.new("Frame")
+local playertp = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local frameplayertpwood = Instance.new("Frame")
+local tptowood = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local framecartp = Instance.new("Frame")
+local cartotp = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local framecartpwood = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local closeframegui = Instance.new("TextButton")
+local openframegui = Instance.new("TextButton")
+
+local Plr = Players.LocalPlayer
+local Clipon = false
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+framegui.Name = "framegui"
+framegui.Parent = ScreenGui
+framegui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+framegui.Position = UDim2.new(0.137177572, 0, 0.118165776, 0)
+framegui.Size = UDim2.new(0, 452, 0, 295)
+framegui.Visible = false
+framegui.Active = true
+framegui.Draggable = true--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+framegui.Name = "framegui"
+framegui.Parent = ScreenGui
+framegui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+framegui.Position = UDim2.new(0.137177572, 0, 0.118165776, 0)
+framegui.Size = UDim2.new(0, 452, 0, 295)
+
+scrollmenu.Name = "scrollmenu"
+scrollmenu.Parent = framegui
+scrollmenu.Active = true
+scrollmenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+scrollmenu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scrollmenu.Position = UDim2.new(0.0333333313, 0, 0.101382501, 0)
+scrollmenu.Size = UDim2.new(0, 98, 0, 257)
+scrollmenu.CanvasSize = UDim2.new(0, 0, 1, 0)
+scrollmenu.ScrollBarThickness = 5
+
+buttonguiinfo.Name = "buttonguiinfo"
+buttonguiinfo.Parent = scrollmenu
+buttonguiinfo.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+buttonguiinfo.BorderColor3 = Color3.fromRGB(38, 38, 38)
+buttonguiinfo.Position = UDim2.new(0.0700000003, 0, 0.0170000009, 0)
+buttonguiinfo.Size = UDim2.new(0, 79, 0, 20)
+buttonguiinfo.Font = Enum.Font.SourceSans
+buttonguiinfo.Text = "GUI INFO"
+buttonguiinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+buttonguiinfo.TextSize = 14.000
+buttonguiinfo.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+misccharacter.Name = "misccharacter"
+misccharacter.Parent = scrollmenu
+misccharacter.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+misccharacter.BorderColor3 = Color3.fromRGB(38, 38, 38)
+misccharacter.Position = UDim2.new(0.0700000003, 0, 0.127000004, 0)
+misccharacter.Size = UDim2.new(0, 79, 0, 20)
+misccharacter.Font = Enum.Font.SourceSans
+misccharacter.Text = "CHARACTER"
+misccharacter.TextColor3 = Color3.fromRGB(255, 255, 255)
+misccharacter.TextSize = 14.000
+misccharacter.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+miscland.Name = "miscland"
+miscland.Parent = scrollmenu
+miscland.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+miscland.BorderColor3 = Color3.fromRGB(38, 38, 38)
+miscland.Position = UDim2.new(0.0700000003, 0, 0.237000003, 0)
+miscland.Size = UDim2.new(0, 79, 0, 20)
+miscland.Font = Enum.Font.SourceSans
+miscland.Text = "LAND"
+miscland.TextColor3 = Color3.fromRGB(255, 255, 255)
+miscland.TextSize = 14.000
+miscland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+miscwaypoint.Name = "miscwaypoint"
+miscwaypoint.Parent = scrollmenu
+miscwaypoint.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+miscwaypoint.BorderColor3 = Color3.fromRGB(38, 38, 38)
+miscwaypoint.Position = UDim2.new(0.0700000003, 0, 0.347000003, 0)
+miscwaypoint.Size = UDim2.new(0, 79, 0, 20)
+miscwaypoint.Font = Enum.Font.SourceSans
+miscwaypoint.Text = "WAYPOINT"
+miscwaypoint.TextColor3 = Color3.fromRGB(255, 255, 255)
+miscwaypoint.TextSize = 14.000
+miscwaypoint.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+frameinfo.Name = "frameinfo"
+frameinfo.Parent = framegui
+frameinfo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frameinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+frameinfo.Position = UDim2.new(0.28414458, 0, 0.101382501, 0)
+frameinfo.Size = UDim2.new(0, 311, 0, 257)
+
+textguiinfo.Name = "textguiinfo"
+textguiinfo.Parent = frameinfo
+textguiinfo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+textguiinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+textguiinfo.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
+textguiinfo.Size = UDim2.new(0, 200, 0, 20)
+textguiinfo.Font = Enum.Font.ArialBold
+textguiinfo.Text = "GUI INFO"
+textguiinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+textguiinfo.TextSize = 14.000
+textguiinfo.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+bgguiinfo.Name = "bgguiinfo"
+bgguiinfo.Parent = frameinfo
+bgguiinfo.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+bgguiinfo.BorderColor3 = Color3.fromRGB(21, 21, 21)
+bgguiinfo.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
+bgguiinfo.Size = UDim2.new(0, 286, 0, 216)
+
+Frameguiby.Name = "Frameguiby"
+Frameguiby.Parent = bgguiinfo
+Frameguiby.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frameguiby.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frameguiby.Position = UDim2.new(0.0559440553, 0, 0.0925925896, 0)
+Frameguiby.Size = UDim2.new(0, 257, 0, 30)
+
+guiby.Name = "guiby"
+guiby.Parent = Frameguiby
+guiby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+guiby.BackgroundTransparency = 100.000
+guiby.Size = UDim2.new(0, 69, 0, 30)
+guiby.Font = Enum.Font.SourceSans
+guiby.Text = "GUI BY :"
+guiby.TextColor3 = Color3.fromRGB(255, 255, 255)
+guiby.TextSize = 14.000
+guiby.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Frameui.Name = "Frameui"
+Frameui.Parent = bgguiinfo
+Frameui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frameui.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frameui.Position = UDim2.new(0.0559440553, 0, 0.314814806, 0)
+Frameui.Size = UDim2.new(0, 257, 0, 30)
+
+uiby.Name = "uiby"
+uiby.Parent = Frameui
+uiby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+uiby.BackgroundTransparency = 100.000
+uiby.Size = UDim2.new(0, 69, 0, 30)
+uiby.Font = Enum.Font.SourceSans
+uiby.Text = "UI BY :"
+uiby.TextColor3 = Color3.fromRGB(255, 255, 255)
+uiby.TextSize = 14.000
+uiby.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Frametest.Name = "Frametest"
+Frametest.Parent = bgguiinfo
+Frametest.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frametest.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frametest.Position = UDim2.new(0.0559440553, 0, 0.560185194, 0)
+Frametest.Size = UDim2.new(0, 257, 0, 30)
+
+test.Name = "test"
+test.Parent = Frametest
+test.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+test.BackgroundTransparency = 100.000
+test.Size = UDim2.new(0, 69, 0, 30)
+test.ZIndex = -2
+test.Font = Enum.Font.SourceSans
+test.Text = "TESTER :"
+test.TextColor3 = Color3.fromRGB(255, 255, 255)
+test.TextSize = 14.000
+test.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Frame.Parent = bgguiinfo
+Frame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frame.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frame.Position = UDim2.new(0.0559440553, 0, 0.80092597, 0)
+Frame.Size = UDim2.new(0, 257, 0, 30)
+
+scrollchar.Name = "scrollchar"
+scrollchar.Parent = framegui
+scrollchar.Active = true
+scrollchar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+scrollchar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scrollchar.Position = UDim2.new(0.284000009, 0, 0.101000004, 0)
+scrollchar.Size = UDim2.new(0, 311, 0, 257)
+scrollchar.Visible = false
+scrollchar.CanvasSize = UDim2.new(0, 0, 1.5, 0)
+
+Framechar.Name = "Framechar"
+Framechar.Parent = scrollchar
+Framechar.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Framechar.BorderColor3 = Color3.fromRGB(21, 21, 21)
+Framechar.Position = UDim2.new(0.0385852084, 0, 0.0923055634, 0)
+Framechar.Size = UDim2.new(0, 286, 0, 383)
+
+Framews.Name = "Framews"
+Framews.Parent = Framechar
+Framews.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Framews.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Framews.Position = UDim2.new(0.0450000018, 0, 0.0280000009, 0)
+Framews.Size = UDim2.new(0, 263, 0, 30)
+
+walkspeedtext.Name = "walkspeedtext"
+walkspeedtext.Parent = Framews
+walkspeedtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+walkspeedtext.BackgroundTransparency = 100.000
+walkspeedtext.Size = UDim2.new(0, 87, 0, 30)
+walkspeedtext.Font = Enum.Font.SourceSans
+walkspeedtext.Text = "WALK SPEED"
+walkspeedtext.TextColor3 = Color3.fromRGB(255, 255, 255)
+walkspeedtext.TextSize = 14.000
+walkspeedtext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+walkspeed.Name = "walkspeed"
+walkspeed.Parent = Framews
+walkspeed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+walkspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+walkspeed.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+walkspeed.Size = UDim2.new(0, 60, 0, 20)
+walkspeed.Font = Enum.Font.SourceSans
+walkspeed.Text = "CLICK"
+walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+walkspeed.TextSize = 14.000
+
+wsframe.Name = "wsframe"
+wsframe.Parent = walkspeed
+wsframe.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+wsframe.BorderColor3 = Color3.fromRGB(255, 255, 255)
+wsframe.Position = UDim2.new(-3.28444672, 0, -0.330087274, 0)
+wsframe.Size = UDim2.new(0, 263, 0, 30)
+wsframe.Visible = false
+
+wsinput.Name = "wsinput"
+wsinput.Parent = wsframe
+wsinput.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+wsinput.BorderColor3 = Color3.fromRGB(255, 255, 255)
+wsinput.Position = UDim2.new(0.0476553068, 0, 0.252962083, 0)
+wsinput.Size = UDim2.new(0, 60, 0, 18)
+wsinput.Font = Enum.Font.ArialBold
+wsinput.Text = ""
+wsinput.TextColor3 = Color3.fromRGB(255, 255, 255)
+wsinput.TextScaled = true
+wsinput.TextSize = 14.000
+wsinput.TextWrapped = true
+
+setws.Name = "setws"
+setws.Parent = wsframe
+setws.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+setws.BorderColor3 = Color3.fromRGB(255, 255, 255)
+setws.Position = UDim2.new(0.359484315, 0, 0.193523154, 0)
+setws.Size = UDim2.new(0, 60, 0, 18)
+setws.Font = Enum.Font.ArialBold
+setws.Text = "Set Walk Speed"
+setws.TextColor3 = Color3.fromRGB(255, 255, 255)
+setws.TextScaled = true
+setws.TextSize = 14.000
+setws.TextWrapped = true
+
+rews.Name = "rews"
+rews.Parent = wsframe
+rews.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+rews.BorderColor3 = Color3.fromRGB(255, 255, 255)
+rews.Position = UDim2.new(0.619386137, 0, 0.193523154, 0)
+rews.Size = UDim2.new(0, 60, 0, 18)
+rews.Font = Enum.Font.ArialBold
+rews.Text = "Reset Walk Speed"
+rews.TextColor3 = Color3.fromRGB(255, 255, 255)
+rews.TextScaled = true
+rews.TextSize = 14.000
+rews.TextWrapped = true
+
+wsclose.Name = "wsclose"
+wsclose.Parent = wsframe
+wsclose.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+wsclose.BorderColor3 = Color3.fromRGB(38, 38, 38)
+wsclose.Position = UDim2.new(0.88075912, 0, 0.0898000076, 0)
+wsclose.Size = UDim2.new(0, 30, 0, 27)
+wsclose.Font = Enum.Font.ArialBold
+wsclose.Text = ">"
+wsclose.TextColor3 = Color3.fromRGB(255, 255, 255)
+wsclose.TextScaled = true
+wsclose.TextSize = 14.000
+wsclose.TextWrapped = true
+
+Framejp.Name = "Framejp"
+Framejp.Parent = Framechar
+Framejp.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Framejp.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Framejp.Position = UDim2.new(0.0450000018, 0, 0.128000006, 0)
+Framejp.Size = UDim2.new(0, 263, 0, 30)
+
+jumppowertext.Name = "jumppowertext"
+jumppowertext.Parent = Framejp
+jumppowertext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jumppowertext.BackgroundTransparency = 100.000
+jumppowertext.Size = UDim2.new(0, 87, 0, 30)
+jumppowertext.Font = Enum.Font.SourceSans
+jumppowertext.Text = "JUMP POWER"
+jumppowertext.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumppowertext.TextSize = 14.000
+jumppowertext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+jumppower.Name = "jumppower"
+jumppower.Parent = Framejp
+jumppower.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+jumppower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jumppower.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+jumppower.Size = UDim2.new(0, 60, 0, 20)
+jumppower.Font = Enum.Font.SourceSans
+jumppower.Text = "CLICK"
+jumppower.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumppower.TextSize = 14.000
+jumppower.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+jpframe.Name = "jpframe"
+jpframe.Parent = Framejp
+jpframe.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+jpframe.BorderColor3 = Color3.fromRGB(255, 255, 255)
+jpframe.Position = UDim2.new(-0.00344491005, 0, 0.0666666627, 0)
+jpframe.Size = UDim2.new(0, 263, 0, 30)
+jpframe.Visible = false
+
+jpinput.Name = "jpinput"
+jpinput.Parent = jpframe
+jpinput.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+jpinput.BorderColor3 = Color3.fromRGB(255, 255, 255)
+jpinput.Position = UDim2.new(0.0476553068, 0, 0.252962083, 0)
+jpinput.Size = UDim2.new(0, 60, 0, 18)
+jpinput.Font = Enum.Font.ArialBold
+jpinput.Text = ""
+jpinput.TextColor3 = Color3.fromRGB(255, 255, 255)
+jpinput.TextScaled = true
+jpinput.TextSize = 14.000
+jpinput.TextWrapped = true
+
+setjp.Name = "setjp"
+setjp.Parent = jpframe
+setjp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+setjp.BorderColor3 = Color3.fromRGB(255, 255, 255)
+setjp.Position = UDim2.new(0.359484315, 0, 0.193523154, 0)
+setjp.Size = UDim2.new(0, 60, 0, 18)
+setjp.Font = Enum.Font.ArialBold
+setjp.Text = "Set Jump Power"
+setjp.TextColor3 = Color3.fromRGB(255, 255, 255)
+setjp.TextScaled = true
+setjp.TextSize = 14.000
+setjp.TextWrapped = true
+
+rejp.Name = "rejp"
+rejp.Parent = jpframe
+rejp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+rejp.BorderColor3 = Color3.fromRGB(255, 255, 255)
+rejp.Position = UDim2.new(0.619386137, 0, 0.193523154, 0)
+rejp.Size = UDim2.new(0, 60, 0, 18)
+rejp.Font = Enum.Font.ArialBold
+rejp.Text = "Reset Jump Power"
+rejp.TextColor3 = Color3.fromRGB(255, 255, 255)
+rejp.TextScaled = true
+rejp.TextSize = 14.000
+rejp.TextWrapped = true
+
+jpclose.Name = "jpclose"
+jpclose.Parent = jpframe
+jpclose.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+jpclose.BorderColor3 = Color3.fromRGB(38, 38, 38)
+jpclose.Position = UDim2.new(0.88075912, 0, 0.0898000076, 0)
+jpclose.Size = UDim2.new(0, 30, 0, 27)
+jpclose.Font = Enum.Font.ArialBold
+jpclose.Text = ">"
+jpclose.TextColor3 = Color3.fromRGB(255, 255, 255)
+jpclose.TextScaled = true
+jpclose.TextSize = 14.000
+jpclose.TextWrapped = true
+
+Framefly.Name = "Framefly"
+Framefly.Parent = Framechar
+Framefly.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Framefly.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Framefly.Position = UDim2.new(0.0450000018, 0, 0.228, 0)
+Framefly.Size = UDim2.new(0, 263, 0, 30)
+
+flytext.Name = "flytext"
+flytext.Parent = Framefly
+flytext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+flytext.BackgroundTransparency = 100.000
+flytext.Size = UDim2.new(0, 87, 0, 30)
+flytext.Font = Enum.Font.SourceSans
+flytext.Text = "FLY"
+flytext.TextColor3 = Color3.fromRGB(255, 255, 255)
+flytext.TextSize = 14.000
+flytext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+fly.Name = "fly"
+fly.Parent = Framefly
+fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fly.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+fly.Size = UDim2.new(0, 60, 0, 20)
+fly.Font = Enum.Font.SourceSans
+fly.Text = "CLICK"
+fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+fly.TextSize = 14.000
+fly.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Framenoclip.Name = "Framenoclip"
+Framenoclip.Parent = Framechar
+Framenoclip.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Framenoclip.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Framenoclip.Position = UDim2.new(0.0450000018, 0, 0.328000009, 0)
+Framenoclip.Size = UDim2.new(0, 263, 0, 30)
+
+nocliptext.Name = "nocliptext"
+nocliptext.Parent = Framenoclip
+nocliptext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nocliptext.BackgroundTransparency = 100.000
+nocliptext.Size = UDim2.new(0, 87, 0, 30)
+nocliptext.Font = Enum.Font.SourceSans
+nocliptext.Text = "NO CLIP"
+nocliptext.TextColor3 = Color3.fromRGB(255, 255, 255)
+nocliptext.TextSize = 14.000
+nocliptext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+noclip.Name = "noclip"
+noclip.Parent = Framenoclip
+noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+noclip.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+noclip.Size = UDim2.new(0, 60, 0, 20)
+noclip.Font = Enum.Font.SourceSans
+noclip.Text = "CLICK"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclip.TextSize = 14.000
+noclip.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Status.Name = "Status"
+Status.Parent = Framenoclip
+Status.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status.Position = UDim2.new(0.281368822, 0, 0.166954547, 0)
+Status.Size = UDim2.new(0, 35, 0, 19)
+Status.Visible = false
+Status.Font = Enum.Font.SourceSans
+Status.Text = "OFF"
+Status.TextColor3 = Color3.fromRGB(170, 0, 0)
+Status.TextSize = 14.000
+Status.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+
+StatusPF.Name = "StatusPF"
+StatusPF.Parent = Framenoclip
+StatusPF.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+StatusPF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StatusPF.Position = UDim2.new(0.441064626, 0, 0.166954547, 0)
+StatusPF.Size = UDim2.new(0, 45, 0, 19)
+StatusPF.Visible = false
+StatusPF.Font = Enum.Font.SourceSans
+StatusPF.Text = "STATUS"
+StatusPF.TextColor3 = Color3.fromRGB(170, 0, 0)
+StatusPF.TextSize = 14.000
+StatusPF.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+
+Frameinfjump.Name = "Frameinfjump"
+Frameinfjump.Parent = Framechar
+Frameinfjump.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frameinfjump.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frameinfjump.Position = UDim2.new(0.0450000018, 0, 0.428000003, 0)
+Frameinfjump.Size = UDim2.new(0, 263, 0, 30)
+
+infinitejumptext.Name = "infinitejumptext"
+infinitejumptext.Parent = Frameinfjump
+infinitejumptext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infinitejumptext.BackgroundTransparency = 100.000
+infinitejumptext.Size = UDim2.new(0, 87, 0, 30)
+infinitejumptext.Font = Enum.Font.SourceSans
+infinitejumptext.Text = "INFINITE JUMP"
+infinitejumptext.TextColor3 = Color3.fromRGB(255, 255, 255)
+infinitejumptext.TextSize = 14.000
+infinitejumptext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+infinitejump.Name = "infinitejump"
+infinitejump.Parent = Frameinfjump
+infinitejump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+infinitejump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infinitejump.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+infinitejump.Size = UDim2.new(0, 60, 0, 20)
+infinitejump.Font = Enum.Font.SourceSans
+infinitejump.Text = "CLICK"
+infinitejump.TextColor3 = Color3.fromRGB(255, 255, 255)
+infinitejump.TextSize = 14.000
+infinitejump.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Frameclicktp.Name = "Frameclicktp"
+Frameclicktp.Parent = Framechar
+Frameclicktp.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frameclicktp.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frameclicktp.Position = UDim2.new(0.0450000018, 0, 0.527999997, 0)
+Frameclicktp.Size = UDim2.new(0, 263, 0, 30)
+
+clicktptext.Name = "clicktptext"
+clicktptext.Parent = Frameclicktp
+clicktptext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clicktptext.BackgroundTransparency = 100.000
+clicktptext.Size = UDim2.new(0, 87, 0, 30)
+clicktptext.Font = Enum.Font.SourceSans
+clicktptext.Text = "CLICK TP"
+clicktptext.TextColor3 = Color3.fromRGB(255, 255, 255)
+clicktptext.TextSize = 14.000
+clicktptext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+clicktp.Name = "clicktp"
+clicktp.Parent = Frameclicktp
+clicktp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+clicktp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clicktp.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+clicktp.Size = UDim2.new(0, 60, 0, 20)
+clicktp.Font = Enum.Font.SourceSans
+clicktp.Text = "CLICK"
+clicktp.TextColor3 = Color3.fromRGB(255, 255, 255)
+clicktp.TextSize = 14.000
+clicktp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Frameantiblacklist.Name = "Frameantiblacklist"
+Frameantiblacklist.Parent = Framechar
+Frameantiblacklist.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frameantiblacklist.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frameantiblacklist.Position = UDim2.new(0.0450000018, 0, 0.628000021, 0)
+Frameantiblacklist.Size = UDim2.new(0, 263, 0, 30)
+
+antiblacklisttext.Name = "antiblacklisttext"
+antiblacklisttext.Parent = Frameantiblacklist
+antiblacklisttext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+antiblacklisttext.BackgroundTransparency = 100.000
+antiblacklisttext.Size = UDim2.new(0, 87, 0, 30)
+antiblacklisttext.Font = Enum.Font.SourceSans
+antiblacklisttext.Text = "ANTI BLACK LIST"
+antiblacklisttext.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiblacklisttext.TextSize = 14.000
+antiblacklisttext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+antiblacklist.Name = "antiblacklist"
+antiblacklist.Parent = Frameantiblacklist
+antiblacklist.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+antiblacklist.BorderColor3 = Color3.fromRGB(0, 0, 0)
+antiblacklist.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+antiblacklist.Size = UDim2.new(0, 60, 0, 20)
+antiblacklist.Font = Enum.Font.SourceSans
+antiblacklist.Text = "CLICK"
+antiblacklist.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiblacklist.TextSize = 14.000
+antiblacklist.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Framefreezewater.Name = "Framefreezewater"
+Framefreezewater.Parent = Framechar
+Framefreezewater.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Framefreezewater.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Framefreezewater.Position = UDim2.new(0.0450000018, 0, 0.727999985, 0)
+Framefreezewater.Size = UDim2.new(0, 263, 0, 30)
+
+freezewatertext.Name = "freezewatertext"
+freezewatertext.Parent = Framefreezewater
+freezewatertext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+freezewatertext.BackgroundTransparency = 100.000
+freezewatertext.Size = UDim2.new(0, 87, 0, 30)
+freezewatertext.Font = Enum.Font.SourceSans
+freezewatertext.Text = "FREEZE WATER"
+freezewatertext.TextColor3 = Color3.fromRGB(255, 255, 255)
+freezewatertext.TextSize = 14.000
+freezewatertext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+freezewater.Name = "freezewater"
+freezewater.Parent = Framefreezewater
+freezewater.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+freezewater.BorderColor3 = Color3.fromRGB(0, 0, 0)
+freezewater.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+freezewater.Size = UDim2.new(0, 60, 0, 20)
+freezewater.Font = Enum.Font.SourceSans
+freezewater.Text = "CLICK"
+freezewater.TextColor3 = Color3.fromRGB(255, 255, 255)
+freezewater.TextSize = 14.000
+freezewater.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Frameantiafk.Name = "Frameantiafk"
+Frameantiafk.Parent = Framechar
+Frameantiafk.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frameantiafk.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frameantiafk.Position = UDim2.new(0.0450000018, 0, 0.828000009, 0)
+Frameantiafk.Size = UDim2.new(0, 263, 0, 30)
+
+antiafktext.Name = "antiafktext"
+antiafktext.Parent = Frameantiafk
+antiafktext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+antiafktext.BackgroundTransparency = 100.000
+antiafktext.Size = UDim2.new(0, 87, 0, 30)
+antiafktext.Font = Enum.Font.SourceSans
+antiafktext.Text = "ANTI AFK"
+antiafktext.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiafktext.TextSize = 14.000
+antiafktext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+antiafk.Name = "antiafk"
+antiafk.Parent = Frameantiafk
+antiafk.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+antiafk.BorderColor3 = Color3.fromRGB(0, 0, 0)
+antiafk.Position = UDim2.new(0.737642586, 0, 0.200287879, 0)
+antiafk.Size = UDim2.new(0, 60, 0, 20)
+antiafk.Font = Enum.Font.SourceSans
+antiafk.Text = "CLICK"
+antiafk.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiafk.TextSize = 14.000
+antiafk.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+help.Name = "help"
+help.Parent = Framechar
+help.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+help.Position = UDim2.new(0.146853149, 0, 0.929503918, 0)
+help.Size = UDim2.new(0, 200, 0, 20)
+help.Font = Enum.Font.SourceSans
+help.Text = "HELP"
+help.TextColor3 = Color3.fromRGB(0, 0, 0)
+help.TextSize = 14.000
+
+textchar.Name = "textchar"
+textchar.Parent = scrollchar
+textchar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textchar.BackgroundTransparency = 100.000
+textchar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+textchar.Position = UDim2.new(0.218649521, 0, 0.0130311325, 0)
+textchar.Size = UDim2.new(0, 172, 0, 23)
+textchar.Font = Enum.Font.ArialBold
+textchar.Text = "LOCAL CHARACTER"
+textchar.TextColor3 = Color3.fromRGB(255, 255, 255)
+textchar.TextSize = 14.000
+textchar.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+frameland.Name = "frameland"
+frameland.Parent = framegui
+frameland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frameland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+frameland.Position = UDim2.new(0.28414458, 0, 0.101382501, 0)
+frameland.Size = UDim2.new(0, 311, 0, 257)
+frameland.Visible = false
+
+textland.Name = "textland"
+textland.Parent = frameland
+textland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+textland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+textland.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
+textland.Size = UDim2.new(0, 200, 0, 20)
+textland.Font = Enum.Font.ArialBold
+textland.Text = "LAND MISC"
+textland.TextColor3 = Color3.fromRGB(255, 255, 255)
+textland.TextSize = 14.000
+textland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+bgland.Name = "bgland"
+bgland.Parent = frameland
+bgland.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+bgland.BorderColor3 = Color3.fromRGB(21, 21, 21)
+bgland.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
+bgland.Size = UDim2.new(0, 286, 0, 216)
+
+Frameland.Name = "Frameland"
+Frameland.Parent = bgland
+Frameland.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Frameland.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Frameland.Position = UDim2.new(0.0559440553, 0, 0.0925925896, 0)
+Frameland.Size = UDim2.new(0, 257, 0, 30)
+
+freeland.Name = "freeland"
+freeland.Parent = Frameland
+freeland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+freeland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+freeland.Position = UDim2.new(0.0972762629, 0, 0.166666672, 0)
+freeland.Size = UDim2.new(0, 69, 0, 20)
+freeland.Font = Enum.Font.SourceSans
+freeland.Text = "FREE LAND"
+freeland.TextColor3 = Color3.fromRGB(255, 255, 255)
+freeland.TextSize = 14.000
+freeland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+maxland.Name = "maxland"
+maxland.Parent = Frameland
+maxland.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+maxland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+maxland.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
+maxland.Size = UDim2.new(0, 69, 0, 20)
+maxland.Font = Enum.Font.SourceSans
+maxland.Text = "MAX LAND"
+maxland.TextColor3 = Color3.fromRGB(255, 255, 255)
+maxland.TextSize = 14.000
+maxland.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+framedupebase.Name = "framedupebase"
+framedupebase.Parent = bgland
+framedupebase.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+framedupebase.BorderColor3 = Color3.fromRGB(38, 38, 38)
+framedupebase.Position = UDim2.new(0.0559440553, 0, 0.314814806, 0)
+framedupebase.Size = UDim2.new(0, 257, 0, 30)
+
+donatebasetext.Name = "donatebasetext"
+donatebasetext.Parent = framedupebase
+donatebasetext.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+donatebasetext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+donatebasetext.Position = UDim2.new(0.0970000029, 0, 0.166999996, 0)
+donatebasetext.Size = UDim2.new(0, 69, 0, 20)
+donatebasetext.Font = Enum.Font.SourceSans
+donatebasetext.Text = "DONATE BASE"
+donatebasetext.TextColor3 = Color3.fromRGB(255, 255, 255)
+donatebasetext.TextSize = 14.000
+donatebasetext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+openguidonatebase.Name = "openguidonatebase"
+openguidonatebase.Parent = framedupebase
+openguidonatebase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+openguidonatebase.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openguidonatebase.Position = UDim2.new(0.606999993, 0, 0.166999996, 0)
+openguidonatebase.Size = UDim2.new(0, 69, 0, 20)
+openguidonatebase.Font = Enum.Font.SourceSans
+openguidonatebase.Text = "DONATE"
+openguidonatebase.TextColor3 = Color3.fromRGB(255, 255, 255)
+openguidonatebase.TextSize = 14.000
+openguidonatebase.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+openguidonatebase.TextWrapped = true
+
+framefakeload.Name = "framefakeload"
+framefakeload.Parent = bgland
+framefakeload.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+framefakeload.BorderColor3 = Color3.fromRGB(38, 38, 38)
+framefakeload.Position = UDim2.new(0.0559440553, 0, 0.560185194, 0)
+framefakeload.Size = UDim2.new(0, 257, 0, 30)
+
+loadbase.Name = "loadbase"
+loadbase.Parent = framefakeload
+loadbase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+loadbase.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loadbase.Position = UDim2.new(0.0972762629, 0, 0.166666672, 0)
+loadbase.Size = UDim2.new(0, 69, 0, 20)
+loadbase.Font = Enum.Font.SourceSans
+loadbase.Text = "SLOT FAKE"
+loadbase.TextColor3 = Color3.fromRGB(255, 255, 255)
+loadbase.TextSize = 14.000
+loadbase.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+load.Name = "load"
+load.Parent = framefakeload
+load.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+load.BorderColor3 = Color3.fromRGB(0, 0, 0)
+load.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
+load.Size = UDim2.new(0, 69, 0, 20)
+load.Font = Enum.Font.SourceSans
+load.Text = "LOAD"
+load.TextColor3 = Color3.fromRGB(255, 255, 255)
+load.TextSize = 14.000
+load.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+framedupemoney.Name = "framedupemoney"
+framedupemoney.Parent = bgland
+framedupemoney.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+framedupemoney.BorderColor3 = Color3.fromRGB(38, 38, 38)
+framedupemoney.Position = UDim2.new(0.0559440553, 0, 0.80092597, 0)
+framedupemoney.Size = UDim2.new(0, 257, 0, 30)
+
+slot.Name = "slot"
+slot.Parent = framedupemoney
+slot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+slot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+slot.Position = UDim2.new(0.0972762629, 0, 0.166666672, 0)
+slot.Size = UDim2.new(0, 69, 0, 20)
+slot.Font = Enum.Font.SourceSans
+slot.Text = "SLOT"
+slot.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot.TextSize = 14.000
+slot.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+dupem.Name = "dupem"
+dupem.Parent = framedupemoney
+dupem.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+dupem.BorderColor3 = Color3.fromRGB(0, 0, 0)
+dupem.Position = UDim2.new(0.607003868, 0, 0.166666672, 0)
+dupem.Size = UDim2.new(0, 69, 0, 20)
+dupem.Font = Enum.Font.SourceSans
+dupem.Text = "DUPE"
+dupem.TextColor3 = Color3.fromRGB(255, 255, 255)
+dupem.TextSize = 14.000
+dupem.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+framedonateslot.Name = "framedonateslot"
+framedonateslot.Parent = frameland
+framedonateslot.Active = true
+framedonateslot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+framedonateslot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+framedonateslot.Position = UDim2.new(0, 0, 0.377000004, 0)
+framedonateslot.Size = UDim2.new(0, 310, 0, 160)
+framedonateslot.Visible = false
+framedonateslot.CanvasSize = UDim2.new(0, 0, 1.20000005, 0)
+framedonateslot.ScrollBarThickness = 0
+
+Frame_2.Parent = framedonateslot
+Frame_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Frame_2.BorderColor3 = Color3.fromRGB(21, 21, 21)
+Frame_2.Position = UDim2.new(0.0387096778, 0, 0.0320061669, 0)
+Frame_2.Size = UDim2.new(0, 286, 0, 286)
+
+slot5.Name = "slot5"
+slot5.Parent = Frame_2
+slot5.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot5.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot5.Position = UDim2.new(0.0489999987, 0, 0.718999982, 0)
+slot5.Size = UDim2.new(0, 257, 0, 30)
+slot5.Font = Enum.Font.SourceSans
+slot5.Text = "SLOT NUMBER 5"
+slot5.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot5.TextSize = 14.000
+slot5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot6.Name = "slot6"
+slot6.Parent = Frame_2
+slot6.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot6.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot6.Position = UDim2.new(0.0489999987, 0, 0.869000018, 0)
+slot6.Size = UDim2.new(0, 257, 0, 30)
+slot6.Font = Enum.Font.SourceSans
+slot6.Text = "SLOT NUMBER 6"
+slot6.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot6.TextSize = 14.000
+slot6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot4.Name = "slot4"
+slot4.Parent = Frame_2
+slot4.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot4.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot4.Position = UDim2.new(0.0489999987, 0, 0.569000006, 0)
+slot4.Size = UDim2.new(0, 257, 0, 30)
+slot4.Font = Enum.Font.SourceSans
+slot4.Text = "SLOT NUMBER 4"
+slot4.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot4.TextSize = 14.000
+slot4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot1.Name = "slot1"
+slot1.Parent = Frame_2
+slot1.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot1.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot1.Position = UDim2.new(0.0489999987, 0, 0.107000001, 0)
+slot1.Size = UDim2.new(0, 257, 0, 30)
+slot1.Font = Enum.Font.SourceSans
+slot1.Text = "SLOT NUMBER 1"
+slot1.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot1.TextSize = 14.000
+slot1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot3.Name = "slot3"
+slot3.Parent = Frame_2
+slot3.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot3.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot3.Position = UDim2.new(0.0489999987, 0, 0.419, 0)
+slot3.Size = UDim2.new(0, 257, 0, 30)
+slot3.Font = Enum.Font.SourceSans
+slot3.Text = "SLOT NUMBER 3"
+slot3.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot3.TextSize = 14.000
+slot3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot2.Name = "slot2"
+slot2.Parent = Frame_2
+slot2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+slot2.BorderColor3 = Color3.fromRGB(38, 38, 38)
+slot2.Position = UDim2.new(0.0489999987, 0, 0.268999994, 0)
+slot2.Size = UDim2.new(0, 257, 0, 30)
+slot2.Font = Enum.Font.SourceSans
+slot2.Text = "SLOT NUMBER 2"
+slot2.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot2.TextSize = 14.000
+slot2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+closedonateslot.Name = "closedonateslot"
+closedonateslot.Parent = framedonateslot
+closedonateslot.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+closedonateslot.BorderColor3 = Color3.fromRGB(21, 21, 21)
+closedonateslot.Position = UDim2.new(0.425806463, 0, 0.0557440966, 0)
+closedonateslot.Size = UDim2.new(0, 44, 0, 12)
+closedonateslot.Font = Enum.Font.SourceSans
+closedonateslot.Text = "^"
+closedonateslot.TextColor3 = Color3.fromRGB(170, 0, 0)
+closedonateslot.TextScaled = true
+closedonateslot.TextSize = 30.000
+closedonateslot.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+closedonateslot.TextWrapped = true
+
+frameway.Name = "frameway"
+frameway.Parent = framegui
+frameway.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frameway.BorderColor3 = Color3.fromRGB(0, 0, 0)
+frameway.Position = UDim2.new(0.28414458, 0, 0.101382501, 0)
+frameway.Size = UDim2.new(0, 311, 0, 257)
+frameway.Visible = false
+
+waypoint.Name = "waypoint"
+waypoint.Parent = frameway
+waypoint.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+waypoint.BorderColor3 = Color3.fromRGB(0, 0, 0)
+waypoint.Position = UDim2.new(0.176848873, 0, 0.0194552522, 0)
+waypoint.Size = UDim2.new(0, 200, 0, 20)
+waypoint.Font = Enum.Font.ArialBold
+waypoint.Text = "WAYPOINT"
+waypoint.TextColor3 = Color3.fromRGB(255, 255, 255)
+waypoint.TextSize = 14.000
+waypoint.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+bgguiinfo_2.Name = "bgguiinfo"
+bgguiinfo_2.Parent = frameway
+bgguiinfo_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+bgguiinfo_2.BorderColor3 = Color3.fromRGB(21, 21, 21)
+bgguiinfo_2.Position = UDim2.new(0.0450160764, 0, 0.112840466, 0)
+bgguiinfo_2.Size = UDim2.new(0, 286, 0, 216)
+
+frameplayertp.Name = "frameplayertp"
+frameplayertp.Parent = bgguiinfo_2
+frameplayertp.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+frameplayertp.BorderColor3 = Color3.fromRGB(38, 38, 38)
+frameplayertp.Position = UDim2.new(0.0559440553, 0, 0.0925925896, 0)
+frameplayertp.Size = UDim2.new(0, 257, 0, 30)
+
+playertp.Name = "playertp"
+playertp.Parent = frameplayertp
+playertp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playertp.BackgroundTransparency = 100.000
+playertp.Position = UDim2.new(0.0272373538, 0, 0, 0)
+playertp.Size = UDim2.new(0, 69, 0, 30)
+playertp.Font = Enum.Font.SourceSans
+playertp.Text = "TP TO PLACE"
+playertp.TextColor3 = Color3.fromRGB(255, 255, 255)
+playertp.TextSize = 14.000
+playertp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton.Parent = frameplayertp
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+TextButton.Size = UDim2.new(0, 69, 0, 20)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "CLICK"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+frameplayertpwood.Name = "frameplayertpwood"
+frameplayertpwood.Parent = bgguiinfo_2
+frameplayertpwood.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+frameplayertpwood.BorderColor3 = Color3.fromRGB(38, 38, 38)
+frameplayertpwood.Position = UDim2.new(0.0559440553, 0, 0.314814806, 0)
+frameplayertpwood.Size = UDim2.new(0, 257, 0, 30)
+
+tptowood.Name = "tptowood"
+tptowood.Parent = frameplayertpwood
+tptowood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tptowood.BackgroundTransparency = 100.000
+tptowood.Position = UDim2.new(0.0272373538, 0, 0, 0)
+tptowood.Size = UDim2.new(0, 69, 0, 30)
+tptowood.Font = Enum.Font.SourceSans
+tptowood.Text = "TP  TO WOOD"
+tptowood.TextColor3 = Color3.fromRGB(255, 255, 255)
+tptowood.TextSize = 14.000
+tptowood.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton_2.Parent = frameplayertpwood
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+TextButton_2.Size = UDim2.new(0, 69, 0, 20)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "CLICK"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+TextButton_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+framecartp.Name = "framecartp"
+framecartp.Parent = bgguiinfo_2
+framecartp.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+framecartp.BorderColor3 = Color3.fromRGB(38, 38, 38)
+framecartp.Position = UDim2.new(0.0559440553, 0, 0.560185194, 0)
+framecartp.Size = UDim2.new(0, 257, 0, 30)
+
+cartotp.Name = "cartotp"
+cartotp.Parent = framecartp
+cartotp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cartotp.BackgroundTransparency = 100.000
+cartotp.Position = UDim2.new(0.0272373538, 0, 0, 0)
+cartotp.Size = UDim2.new(0, 69, 0, 30)
+cartotp.ZIndex = -2
+cartotp.Font = Enum.Font.SourceSans
+cartotp.Text = "CAR TP"
+cartotp.TextColor3 = Color3.fromRGB(255, 255, 255)
+cartotp.TextSize = 14.000
+cartotp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton_3.Parent = framecartp
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+TextButton_3.Size = UDim2.new(0, 69, 0, 20)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "CLICK"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+TextButton_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+framecartpwood.Name = "framecartpwood"
+framecartpwood.Parent = bgguiinfo_2
+framecartpwood.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+framecartpwood.BorderColor3 = Color3.fromRGB(38, 38, 38)
+framecartpwood.Position = UDim2.new(0.0559440553, 0, 0.80092597, 0)
+framecartpwood.Size = UDim2.new(0, 257, 0, 30)
+
+TextLabel.Parent = framecartpwood
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 100.000
+TextLabel.Position = UDim2.new(0.0272373538, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 69, 0, 30)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "CAR TP WOOD"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton_4.Parent = framecartpwood
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.Position = UDim2.new(0.696498036, 0, 0.166666672, 0)
+TextButton_4.Size = UDim2.new(0, 69, 0, 20)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "CLICK"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+TextButton_4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+closeframegui.Name = "closeframegui"
+closeframegui.Parent = framegui
+closeframegui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+closeframegui.BorderColor3 = Color3.fromRGB(38, 38, 38)
+closeframegui.Position = UDim2.new(0.943436623, 0, 0, 0)
+closeframegui.Size = UDim2.new(0, 25, 0, 22)
+closeframegui.Font = Enum.Font.SourceSans
+closeframegui.Text = "X"
+closeframegui.TextColor3 = Color3.fromRGB(170, 0, 0)
+closeframegui.TextScaled = true
+closeframegui.TextSize = 14.000
+closeframegui.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
+closeframegui.TextWrapped = true
+
+openframegui.Name = "openframegui"
+openframegui.Parent = ScreenGui
+openframegui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+openframegui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openframegui.Position = UDim2.new(0.0116009284, 0, 0.941798925, 0)
+openframegui.Size = UDim2.new(0, 50, 0, 21)
+openframegui.Style = Enum.ButtonStyle.RobloxButton
+openframegui.Font = Enum.Font.SourceSans
+openframegui.Text = "OPEN"
+openframegui.TextColor3 = Color3.fromRGB(255, 255, 255)
+openframegui.TextSize = 14.000
+
+
+
+----------------script------------
+
+openframegui.MouseButton1Click:Connect(function()
+	framegui.Visible = true
+	openframegui.Visible = false
+end)
+
+closeframegui.MouseButton1Click:Connect(function()
+	framegui.Visible = false
+	openframegui.Visible = true
+end)
+
+buttonguiinfo.MouseButton1Click:Connect(function()
+	frameway.Visible = false
+	scrollchar.Visible = false
+	frameland.Visible = false
+	frameinfo.Visible = true
+end)
+
+misccharacter.MouseButton1Click:Connect(function()
+	frameinfo.Visible = false
+	frameway.Visible = false
+	frameland.Visible = false
+	scrollchar.Visible = true
+end)
+
+miscland.MouseButton1Click:Connect(function()
+	frameinfo.Visible = false
+	frameway.Visible = false
+	frameland.Visible = true
+	scrollchar.Visible = false
+end)
+
+miscwaypoint.MouseButton1Click:Connect(function()
+	frameinfo.Visible = false
+	frameway.Visible = true
+	frameland.Visible = false
+	scrollchar.Visible = false
+end)
+
+openguidonatebase.MouseButton1Click:Connect(function()
+	framedonateslot.Visible = true
+end)
+
+closedonateslot.MouseButton1Click:Connect(function()
+	framedonateslot.Visible = false
+end)
+
+-----------------------------------------------------------------------------------------
+walkspeed.MouseButton1Click:Connect(function()
+	wsframe.Visible = true
+end)
+
+setws.MouseButton1Click:Connect(function()
+	_G.WS = wsinput.Text;
+
+	local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+	Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+		Humanoid.WalkSpeed = _G.WS;
+	end)
+	Humanoid.WalkSpeed = _G.WS;
+
+	walkspeedenabled = true
+
+
+end)
+
+rews.MouseButton1Click:Connect(function()
+	_G.WS = 16;
+
+	local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+	Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+		Humanoid.WalkSpeed = _G.WS;
+	end)
+	Humanoid.WalkSpeed = _G.WS;
+
+	walkspeedenabled = true
+end)
+
+wsclose.MouseButton1Click:Connect(function()
+	wsframe.Visible = false
+end)
+
+--------------------------------------------------------------------------------------
+jumppower.MouseButton1Click:Connect(function()
+	jpframe.Visible = true
+end)
+
+setjp.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = jpinput.Text
+end)
+
+rejp.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+jpclose.MouseButton1Click:Connect(function()
+	walkspeed.Visible = true
+	fly.Visible = true
+	jpframe.Visible = false
+end)
+-------------------------------------------------------------------------------------
+fly.MouseButton1Click:Connect(function()
+	repeat wait() 
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.Head 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 400 
+	local speed = 5000 
+
+	function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+			plr.Character.Humanoid.PlatformStand = true 
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+				speed = speed+.5+(speed/maxspeed) 
+				if speed > maxspeed then 
+					speed = maxspeed 
+				end 
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+				speed = speed-1 
+				if speed < 0 then 
+					speed = 0 
+				end 
+			end 
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+			else 
+				bv.velocity = Vector3.new(0,0.1,0) 
+			end 
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+	end 
+
+	mouse.KeyDown:connect(function(key) 
+		if key:lower() == "f" then 
+			if flying then flying = false 
+			else 
+				flying = true 
+				Fly() 
+			end 
+		elseif key:lower() == "w" then 
+			ctrl.f = 1 
+		elseif key:lower() == "s" then 
+			ctrl.b = -1 
+		elseif key:lower() == "a" then 
+			ctrl.l = -1 
+		elseif key:lower() == "d" then 
+			ctrl.r = 1 
+		end 
+	end) 
+
+	mouse.KeyUp:connect(function(key) 
+		if key:lower() == "w" then 
+			ctrl.f = 0 
+		elseif key:lower() == "s" then 
+			ctrl.b = 0 
+		elseif key:lower() == "a" then 
+			ctrl.l = 0 
+		elseif key:lower() == "d" then 
+			ctrl.r = 0 
+		end 
+	end)
+	Fly()
+end)
+
+------------------------------------------------------------------------------------------
+
+noclip.MouseButton1Click:connect(function()
+	if Status.Text == "OFF" then
+		Clipon = true
+		Status.Text = "ON"
+		Status.TextColor3 = Color3.new(0,185,0)
+		Stepped = game:GetService("RunService").Stepped:Connect(function()
+			if not Clipon == false then
+				for a, b in pairs(Workspace:GetChildren()) do
+					if b.Name == Plr.Name then
+						for i, v in pairs(Workspace[Plr.Name]:GetChildren()) do
+							if v:IsA("BasePart") then
+								v.CanCollide = false
+							end end end end
+			else
+				Stepped:Disconnect()
+			end
+		end)
+	elseif Status.Text == "ON" then
+		Clipon = false
+		Status.Text = "OFF"
+		Status.TextColor3 = Color3.new(170,0,0)
+	end
+end)
+
+----------------------------------------------------------------------------------------
+
+infinitejump.MouseButton1Click:Connect(function()
+
+	_G.infinjump = true
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+				Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+				Humanoid:ChangeState("Jumping")
+				wait(0.1)
+				Humanoid:ChangeState("Seated")
+			end
+		end
+	end)
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		k = k:lower()
+		if k == "r" then
+			if _G.infinjump == true then
+				_G.infinjump = false
+			else
+				_G.infinjump = true
+			end
+		end
+	end)
+end)
+
+-------------------------------------------------------------------------
+
+clicktp.MouseButton1Click:Connect(function()
+	noclip = false
+	local UIS = game:GetService("UserInputService")
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+
+
+	function GetCharacter()
+		return game.Players.LocalPlayer.Character
+	end
+
+	function Teleport(pos)
+		local Char = GetCharacter()
+		if Char then
+			Char:MoveTo(pos)
+		end
+	end
+
+
+	UIS.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 and UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+			Teleport(Mouse.Hit.p)
+		end
+	end)
+
+end)
+
+-------------------------------------------------------------------------
+
+antiblacklist.MouseButton1Click:connect(function()
+	antiblacklist.TextColor3 = Color3.new(0, 1, 0)
+	antiblacklist.BackgroundColor3 = Color3.new(0, 0, 0)
+	antiblacklist.Text = "Anti Black List (ON)"
+	local plr = game.Players.LocalPlayer
+	local cframe
+	for i,v in next, workspace:GetDescendants() do
+		if v:IsA("SpawnLocation") then
+			v.Touched:Connect(function(h)
+				if h.Parent == plr.Character and cframe then
+					plr.Character:SetPrimaryPartCFrame(cframe)
+				end
+			end)
+		end
+	end
+
+	game:GetService("RunService"):BindToRenderStep("NO HACKS",Enum.RenderPriority.Last.Value,function()
+		if game.Players.LocalPlayer.Character.PrimaryPart then
+			cframe = game.Players.LocalPlayer.Character.PrimaryPart.CFrame
+		end
+	end)
+
+	for i,v in next, debug.getregistry() do
+		if type(v)=='function' and debug.getupvalues(v).lastUpdate then
+			debug.setupvalue(v,"lastUpdate",math.huge)
+			break
+		end
+	end
+
+	for i,v in next, workspace.Effects:GetChildren() do
+		if v:IsA("BasePart") and v.Name == "BlacklistWall" then
+			v:Destroy()
+		end
+	end
+end)
+
+---------------------------------------------------------------------------------------
+
+local toggle = false
+freezewater.MouseButton1Click:Connect(function()
+	toggle = not toggle
+	freezewater.BorderColor3 = (toggle and Color3.fromRGB(115, 237, 255) or Color3.fromRGB(255,255,255))
+	freezewater.BorderSizePixel = (toggle and 0 or 0)
+	if toggle then
+		for index, water in pairs(game.Workspace.Water:GetChildren()) do
+			water.CanCollide = true
+		end
+	else
+		for index, water in pairs(game.Workspace.Water:GetChildren()) do
+			water.CanCollide = false
+		end
+	end
+end)
+
+----------------------------------------------------------------------------------
+
+antiafk.MouseButton1Down:Connect(function()
+
+	messageBot = coroutine.wrap(function()
+		while afkactive == true do
+			wait(300)
+			possiblechats = {"afk", "Away from keyboard", "I'm AFK"}
+			decide=math.random(1,#possiblechats)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(possiblechats[decide], "All")
+			game.Players:Chat("/e point")
+		end
+	end)
+
+	moveChar = coroutine.wrap(function()
+		plr = game:service'Players'.LocalPlayer
+		char = plr.Character
+		hum = char:FindFirstChildOfClass'Humanoid'
+		while afkactive==true do
+			wait(1)
+			hum:Move(Vector3.new(1, 0, 0), false)
+			wait(1)
+			hum:Move(Vector3.new(-1, 0, 0), false)
+			wait(1)
+			hum:Move(Vector3.new(1, 0, 0), false)
+			wait(1)
+			hum:Move(Vector3.new(-1, 0, 0), false)
+			wait(1)
+			hum:Move(Vector3.new(0, 1, 0), false)
+			wait(1)
+			hum:Move(Vector3.new(0, 1, 0), false)
+			wait(60)
+		end
+	end)
+
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ANTI-AFK";
+		Text = "ON";
+	})
+end)
+
+---------------------------------------------------------------------
+
+slot1.MouseButton1Click:connect(function()
+	function ML(Tex)
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.Text = Tex
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.DropShadow.Text = Tex
+	end
+
+	function Donate(Slot)
+		local EmptyPlot
+		local LocalPlayer = game.Players.LocalPlayer
+		local HRP = LocalPlayer.Character.HumanoidRootPart
+		local OldCFrame
+		local Load = game:GetService("ReplicatedStorage").LoadSaveRequests
+		for i,v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+			if v:FindFirstChild("Owner") and tostring(v.Owner.Value) == "nil" then
+				EmptyPlot = v
+			end
+		end
+
+		Load.RequestLoad:InvokeServer(Slot,game.Players.LocalPlayer)
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "By KRYZ/DikerR25",
+			Text = "Please Wait 60 Seconds",
+			Duration = 15,
+		})
+		for i=59,0,-1 do
+			ML(i)
+			wait(1)
+		end
+
+		repeat wait() until Load.ClientMayLoad:InvokeServer(game.Players.LocalPlayer)
+		OldCFrame = HRP.CFrame
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = EmptyPlot.OriginSquare.CFrame + Vector3.new(0,1,0)
+		game.ReplicatedStorage.Interaction.ClientSetListPlayer:InvokeServer(game:GetService'Players'.LocalPlayer.WhitelistFolder, game.Players.LocalPlayer, true)
+		repeat game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(EmptyPlot) wait() until EmptyPlot.Owner.Value == LocalPlayer
+		HRP.CFrame = OldCFrame
+		Load.RequestLoad:InvokeServer(-1,game.Players.LocalPlayer)
+		print("Dupe Finished")
+	end
+	Donate(1)
+end)
+
+slot2.MouseButton1Click:connect(function()
+	function ML(Tex)
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.Text = Tex
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.DropShadow.Text = Tex
+	end
+
+	function Donate(Slot)
+		local EmptyPlot
+		local LocalPlayer = game.Players.LocalPlayer
+		local HRP = LocalPlayer.Character.HumanoidRootPart
+		local OldCFrame
+		local Load = game:GetService("ReplicatedStorage").LoadSaveRequests
+		for i,v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+			if v:FindFirstChild("Owner") and tostring(v.Owner.Value) == "nil" then
+				EmptyPlot = v
+			end
+		end
+
+		Load.RequestLoad:InvokeServer(Slot,game.Players.LocalPlayer)
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "By KRYZ/DikerR25",
+			Text = "Please Wait 60 Seconds",
+			Duration = 15,
+		})
+		for i=59,0,-1 do
+			ML(i)
+			wait(1)
+		end
+
+		repeat wait() until Load.ClientMayLoad:InvokeServer(game.Players.LocalPlayer)
+		OldCFrame = HRP.CFrame
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = EmptyPlot.OriginSquare.CFrame + Vector3.new(0,1,0)
+		game.ReplicatedStorage.Interaction.ClientSetListPlayer:InvokeServer(game:GetService'Players'.LocalPlayer.WhitelistFolder, game.Players.LocalPlayer, true)
+		repeat game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(EmptyPlot) wait() until EmptyPlot.Owner.Value == LocalPlayer
+		HRP.CFrame = OldCFrame
+		Load.RequestLoad:InvokeServer(-1,game.Players.LocalPlayer)
+		print("Dupe Finished")
+	end
+	Donate(2)
+end)
+
+slot3.MouseButton1Click:connect(function()
+	function ML(Tex)
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.Text = Tex
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.DropShadow.Text = Tex
+	end
+
+	function Donate(Slot)
+		local EmptyPlot
+		local LocalPlayer = game.Players.LocalPlayer
+		local HRP = LocalPlayer.Character.HumanoidRootPart
+		local OldCFrame
+		local Load = game:GetService("ReplicatedStorage").LoadSaveRequests
+		for i,v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+			if v:FindFirstChild("Owner") and tostring(v.Owner.Value) == "nil" then
+				EmptyPlot = v
+			end
+		end
+
+		Load.RequestLoad:InvokeServer(Slot,game.Players.LocalPlayer)
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "By KRYZ/DikerR25",
+			Text = "Please Wait 60 Seconds",
+			Duration = 15,
+		})
+		for i=59,0,-1 do
+			ML(i)
+			wait(1)
+		end
+
+		repeat wait() until Load.ClientMayLoad:InvokeServer(game.Players.LocalPlayer)
+		OldCFrame = HRP.CFrame
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = EmptyPlot.OriginSquare.CFrame + Vector3.new(0,1,0)
+		game.ReplicatedStorage.Interaction.ClientSetListPlayer:InvokeServer(game:GetService'Players'.LocalPlayer.WhitelistFolder, game.Players.LocalPlayer, true)
+		repeat game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(EmptyPlot) wait() until EmptyPlot.Owner.Value == LocalPlayer
+		HRP.CFrame = OldCFrame
+		Load.RequestLoad:InvokeServer(-1,game.Players.LocalPlayer)
+		print("Dupe Finished")
+	end
+	Donate(3)
+end)
+
+slot4.MouseButton1Click:connect(function()
+	function ML(Tex)
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.Text = Tex
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.DropShadow.Text = Tex
+	end
+
+	function Donate(Slot)
+		local EmptyPlot
+		local LocalPlayer = game.Players.LocalPlayer
+		local HRP = LocalPlayer.Character.HumanoidRootPart
+		local OldCFrame
+		local Load = game:GetService("ReplicatedStorage").LoadSaveRequests
+		for i,v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+			if v:FindFirstChild("Owner") and tostring(v.Owner.Value) == "nil" then
+				EmptyPlot = v
+			end
+		end
+
+		Load.RequestLoad:InvokeServer(Slot,game.Players.LocalPlayer)
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "By KRYZ/DikerR25",
+			Text = "Please Wait 60 Seconds",
+			Duration = 15,
+		})
+		for i=59,0,-1 do
+			ML(i)
+			wait(1)
+		end
+
+		repeat wait() until Load.ClientMayLoad:InvokeServer(game.Players.LocalPlayer)
+		OldCFrame = HRP.CFrame
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = EmptyPlot.OriginSquare.CFrame + Vector3.new(0,1,0)
+		game.ReplicatedStorage.Interaction.ClientSetListPlayer:InvokeServer(game:GetService'Players'.LocalPlayer.WhitelistFolder, game.Players.LocalPlayer, true)
+		repeat game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(EmptyPlot) wait() until EmptyPlot.Owner.Value == LocalPlayer
+		HRP.CFrame = OldCFrame
+		Load.RequestLoad:InvokeServer(-1,game.Players.LocalPlayer)
+		print("Dupe Finished")
+	end
+	Donate(4)
+end)
+
+slot5.MouseButton1Click:connect(function()
+	function ML(Tex)
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.Text = Tex
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.DropShadow.Text = Tex
+	end
+
+	function Donate(Slot)
+		local EmptyPlot
+		local LocalPlayer = game.Players.LocalPlayer
+		local HRP = LocalPlayer.Character.HumanoidRootPart
+		local OldCFrame
+		local Load = game:GetService("ReplicatedStorage").LoadSaveRequests
+		for i,v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+			if v:FindFirstChild("Owner") and tostring(v.Owner.Value) == "nil" then
+				EmptyPlot = v
+			end
+		end
+
+		Load.RequestLoad:InvokeServer(Slot,game.Players.LocalPlayer)
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "By KRYZ/DikerR25",
+			Text = "Please Wait 60 Seconds",
+			Duration = 15,
+		})
+		for i=59,0,-1 do
+			ML(i)
+			wait(1)
+		end
+
+		repeat wait() until Load.ClientMayLoad:InvokeServer(game.Players.LocalPlayer)
+		OldCFrame = HRP.CFrame
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = EmptyPlot.OriginSquare.CFrame + Vector3.new(0,1,0)
+		game.ReplicatedStorage.Interaction.ClientSetListPlayer:InvokeServer(game:GetService'Players'.LocalPlayer.WhitelistFolder, game.Players.LocalPlayer, true)
+		repeat game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(EmptyPlot) wait() until EmptyPlot.Owner.Value == LocalPlayer
+		HRP.CFrame = OldCFrame
+		Load.RequestLoad:InvokeServer(-1,game.Players.LocalPlayer)
+		print("Dupe Finished")
+	end
+	Donate(5)
+end)
+
+slot6.MouseButton1Click:connect(function()
+	function ML(Tex)
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.Text = Tex
+		game:GetService("Players").LocalPlayer.PlayerGui.MoneyDisplayGui.Text.DropShadow.Text = Tex
+	end
+
+	function Donate(Slot)
+		local EmptyPlot
+		local LocalPlayer = game.Players.LocalPlayer
+		local HRP = LocalPlayer.Character.HumanoidRootPart
+		local OldCFrame
+		local Load = game:GetService("ReplicatedStorage").LoadSaveRequests
+		for i,v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+			if v:FindFirstChild("Owner") and tostring(v.Owner.Value) == "nil" then
+				EmptyPlot = v
+			end
+		end
+
+		Load.RequestLoad:InvokeServer(Slot,game.Players.LocalPlayer)
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "By KRYZ/DikerR25",
+			Text = "Please Wait 60 Seconds",
+			Duration = 15,
+		})
+		for i=59,0,-1 do
+			ML(i)
+			wait(1)
+		end
+
+		repeat wait() until Load.ClientMayLoad:InvokeServer(game.Players.LocalPlayer)
+		OldCFrame = HRP.CFrame
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = EmptyPlot.OriginSquare.CFrame + Vector3.new(0,1,0)
+		game.ReplicatedStorage.Interaction.ClientSetListPlayer:InvokeServer(game:GetService'Players'.LocalPlayer.WhitelistFolder, game.Players.LocalPlayer, true)
+		repeat game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(EmptyPlot) wait() until EmptyPlot.Owner.Value == LocalPlayer
+		HRP.CFrame = OldCFrame
+		Load.RequestLoad:InvokeServer(-1,game.Players.LocalPlayer)
+		print("Dupe Finished")
+	end
+	Donate(6)
+end)
+
+------------------------------------------------------------------------
+
+freeland.MouseButton1Click:connect(function()
+
+	for a,b in pairs(workspace.Properties:GetChildren()) do 
+		if b:FindFirstChild("Owner") and b:FindFirstChild("OriginSquare") and b.Owner.Value == nil then 
+			game.ReplicatedStorage.PropertyPurchasing.ClientPurchasedProperty:FireServer(b, b.OriginSquare.OriginCFrame.Value.p + Vector3.new(0,3,0))
+			wait(0.5)
+			Instance.new('RemoteEvent', game:service'ReplicatedStorage'.Interaction).Name = "Ban"
+			for i,v in pairs(game.Workspace.Properties:GetChildren()) do
+				if v.Owner.Value == game.Players.LocalPlayer then
+					game.Players.LocalPlayer.Character.Humanoid.Jump = true
+					wait(0.1)
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame + Vector3.new(0,10,0)
+					game.Players.LocalPlayer.Character.Humanoid.Jump = true
+					wait(0.1)
+					print("Finished")
+				end
+			end
+		end
+	end
+end)
+
+maxland.MouseButton1Click:connect(function()
+	for i, v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+		if v:FindFirstChild("Owner") and v.Owner.Value == game.Players.LocalPlayer then
+			base = v
+			square = v.OriginSquare
+		end
+	end
+	function makebase(pos)
+		local Event = game:GetService("ReplicatedStorage").PropertyPurchasing.ClientExpandedProperty
+		Event:FireServer(base, pos)
+	end
+	local spos = square.Position
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z))
+	makebase(CFrame.new(spos.X, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z))
+	makebase(CFrame.new(spos.X, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X, spos.Y, spos.Z - 80))
+	--Corners--
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 80))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 80))
+	--Corners--
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 80))
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 40))
+	makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 40))
+	makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 80))
+	makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 80))
+	print("Finished")
+end)
+
+--------------------------------------------------------------------------------
